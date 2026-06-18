@@ -85,9 +85,16 @@
       position: relative;
       overflow: hidden;
       background-color: var(--bg);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
       background-image: url('images/banner.jpg');
       background-size: cover;
       background-position: center;
+      opacity: 0.15;
+      z-index: 0;
     }
 
     .hero-overlay {
@@ -95,16 +102,16 @@
       inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(13,27,42,0.92) 0%,
-        rgba(13,27,42,0.75) 40%,
-        rgba(13,27,42,0.96) 100%
+        rgba(13,27,42,0.98) 0%,
+        rgba(13,27,42,0.92) 50%,
+        rgba(13,27,42,1) 100%
       );
-      z-index: 0;
+      z-index: 1;
     }
 
-    .hero > * {
+    .hero > :not(.hero-bg):not(.hero-overlay) {
       position: relative;
-      z-index: 1;
+      z-index: 2;
     }
 
 
@@ -464,6 +471,7 @@
 
 <!-- HERO -->
 <div class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <img src="images/profile.jpg" alt="Amr Lotfy" class="hero-avatar" />
   <p class="hero-arabic">بسم الله الرحمن الرحيم</p>
