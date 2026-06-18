@@ -1,0 +1,16 @@
+{
+  "name": "amrlotfy-firebase",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "description": "",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^12.15.0"
+  }
+}
