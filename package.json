@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "npx serve ."
+    "start": "npx serve public"
   },
-  "description": "",
+  "description": "Portfolio of Amr Lotfy — Software engineer and founder building Islamic & Arabic-first digital products — full-stack development across Node.js, React, and cloud infrastructure.",
   "main": "app.js",
   "keywords": [],
   "author": "",
